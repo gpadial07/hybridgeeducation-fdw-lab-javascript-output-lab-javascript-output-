@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Output en Javascript</title>
+</head>
+<body>
+
+    <h1>Output en Javascript</h1>
+
+    <button onclick="mostrarAlerta()">
+        Mostrar nombre
+    </button>
+
+    <br><br>
+
+    <p id="texto"></p>
+
+    <button onclick="actualizarTexto()">
+        Actualizar texto
+    </button>
+
+    <script>
+        console.log("La página se ha cargado correctamente.");
+
+        function mostrarAlerta() {
+            alert("El innombrable");
+        }
+
+        function actualizarTexto() {
+            document.getElementById("texto").innerHTML =
+                "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
